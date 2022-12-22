@@ -1,0 +1,28 @@
+{
+  "Source": "PetcoIntegration",
+  "Data": {
+    "Request": {
+      "Settings": {
+        "IsPasswordHashed": false,
+        "LocationSetting": "Code"
+      },
+      "Employees": [
+        {
+          "LoginName": "42424",
+          "FirstName": "nombre",
+          "LastName": "apellido",
+          "NickName": "nombre",
+          "JobTitle": "puesto",
+          "JobId": "idPuesto",
+          "EMail1": "",
+          "Locations": ["7600"],
+          "IsActive": true,
+          "Type": "Employee",
+          "Title": "",
+          "Suffix": "",
+          "password": "password"
+        }
+      ]
+    }
+  }
+}
