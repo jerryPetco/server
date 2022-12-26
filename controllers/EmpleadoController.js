@@ -48,7 +48,15 @@ const registrar = async (req, res) => {
 };
 
 const pintar = (req, res) => {
-  res.send("Hola Mundo");
+  let holamundo = {
+    Id: Math.ceil(Math.random() * 123456),
+    hola: "mundo",
+    token: Math.ceil(Math.random() * 85432179 + 1111111 * 25000000),
+    replyCode: 200,
+    replyText: "conectado",
+  };
+
+  res.json(holamundo);
 };
 
 export { registrar, pintar };

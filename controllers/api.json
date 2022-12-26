@@ -1,26 +1,90 @@
 {
-  "Source": "PetcoIntegration",
+  "Source": "PetcoIntegrationVentel",
   "Data": {
     "Request": {
       "Settings": {
-        "IsPasswordHashed": false,
-        "LocationSetting": "Code"
+        "ItemSetting": "ExternalId",
+        "LocationSetting": "Code",
+        "EmployeeSetting": "LoginName",
+        "DiscountReasonSetting": "Code",
+        "PaymentMethodSetting": "Code",
+        "CustomerSetting": "Id",
+        "TaxZoneSetting": "Code",
+        "TaxCategorySetting": "Code",
+        "TaxJurisdictionSetting": "Code"
       },
-      "Employees": [
+      "Receipts": [
         {
-          "LoginName": "42424",
-          "FirstName": "nombre",
-          "LastName": "apellido",
-          "NickName": "nombre",
-          "JobTitle": "puesto",
-          "JobId": "idPuesto",
-          "EMail1": "",
-          "Locations": ["7600"],
-          "IsActive": true,
-          "Type": "Employee",
-          "Title": "",
-          "Suffix": "",
-          "password": "password"
+          "ReceiptId": "98a3b8ee-7166-47fb-81ae-5c1408db9122",
+          "LocationId": "7120",
+          "ReceiptDateTime": "2022-01-18T16:50:21",
+          "CustomText1": "VENTEL",
+          "Customer": {
+            "CustomerId": "a915762e-895d-479a-99e9-1289c86b83ce"
+          },
+          "TotalAmount": 2625,
+          "AssociateId": "jhrojas",
+          "Items": [
+            {
+              "Qty": 1,
+              "ItemIdentifier": "105244",
+              "TotalAmount": 2200,
+              "TotalIncludeTax": true,
+              "TaxAmount": 303.45,
+              "TaxCategoryId": "2",
+              "Taxes": [
+                {
+                  "TaxAmount": 303.45,
+                  "DestTaxZoneId": "IMPUESTOS",
+                  "SourceTaxZoneId": "IMPUESTOS",
+                  "TaxCategoryId": "2"
+                }
+              ],
+              "LineDiscountReason": {
+                "LineDiscountReasonId": "CUPON CRM",
+                "LineDiscountCouponNumber": "5510102103252212310250000049",
+                "LineDiscountCouponValue": 25
+              },
+              "LargeMemo": "5510102103252212310250000049;25;101004",
+              "TrackingNumber": "5510102103252212310250000049;25;101004"
+            },
+            {
+              "Qty": 5,
+              "ItemIdentifier": "121268",
+              "TotalAmount": 425,
+              "TotalIncludeTax": true,
+              "TaxAmount": 58.62,
+              "TaxCategoryId": "2",
+              "Taxes": [
+                {
+                  "TaxAmount": 58.62,
+                  "DestTaxZoneId": "IMPUESTOS",
+                  "SourceTaxZoneId": "IMPUESTOS",
+                  "TaxCategoryId": "2"
+                }
+              ]
+            }
+          ],
+          "Payments": [
+            {
+              "PaymentMethodId": "LIGAPAGO",
+              "PaymentAmount": 2625,
+              "ListOrder": 0,
+              "Captured": true,
+              "cardInfo": {
+                "AccountNumber": "7100",
+                "CardExpMonth": 12,
+                "CardExpYear": 22,
+                "MerchantId": "7100",
+                "CardOrderId": "715705012216090043",
+                "ReferenceNum": "5112",
+                "TransactionId": "6408929796796107103000",
+                "CardType": "Other"
+              }
+            }
+          ],
+          "ExternalId": "712008112110402497",
+          "IsHeld": false
         }
       ]
     }
